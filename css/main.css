@@ -1,0 +1,70 @@
+html,body{
+    padding: 0;
+    margin: 0;
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/img/background3.jpg");
+    background-position-x: left;
+    background-position-y: top;
+    background-repeat: repeat;
+    background-size: contain;
+    position: relative;
+}
+.keyboard{
+    width: 62%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+}
+.key{
+    height: auto;
+    width: 70px;
+    padding: 8px 3px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.808);
+    border: 1px solid white;
+    transition: all 0.07s  ;
+    -webkit-transition: all 1.07s  ;
+    -moz-transition: all 0.07s  ;
+    -ms-transition: all 0.07s  ;
+    -o-transition: all 0.07s  ;
+}
+.key:hover{
+    background-color: rgba(0, 0, 0, 0.685);
+    border: 1px solid #00270a;
+   cursor: pointer;
+ }
+ .playing{
+     transform:scale(1.05);
+     border-color:#ffc600;
+     box-shadow: 0 0 10px #04f538;
+     -webkit-transform:scale(1.05);
+     -moz-transform:scale(1.05);
+     -ms-transform:scale(1.05);
+     -o-transform:scale(1.05);
+}
+.keyname{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2px;
+}
+.keyson{
+    font-size: 12px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(80, 131, 80);
+}
